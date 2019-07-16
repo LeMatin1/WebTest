@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>层叠样式表</title>
+		
+		<link rel="stylesheet" type="text/css" href="asd.css" />
+		<!--
+			外部样式表
+			1.在CSS 目录下 新建 CSS的样式表文件
+			2.编辑外部样式表
+			3.链接外部样式表
+			 适用站内所以页面
+			标签{
+        			样式属性1：样式属性值1;
+        			样式属性2：样式属性值2;
+        			...
+        		}
+		-->
+		
+		
+		<style type="text/css">
+			a{
+				font-size: 28px;
+				color: green;
+				background-color:yellow;
+			}
+		</style>
+		<!--
+        	内部样式表：
+        	<style>
+        		标签{
+        			样式属性1：样式属性值1;
+        			样式属性2：样式属性值2;
+        			...
+        		}
+        	</style>
+        	作用范围 ：整个页面
+        -->
+	</head>
+	<body>
+	
+		<a href="#">
+			<font size="7" color="salmon" >baidu</font>
+		</a>
+		<!--行内样式表
+			style = "样式属性1：样式属性值1;样式属性2：样式属性值2;"
+			作用范围：当前行距离最近的标签
+		-->
+		<a href="#"  style="font-size: 27px;color: blue;background-color: yellow;">Tao</a>
+		<a href="#">Qao</a>
+		<a href="#">Wao</a>
+		<a href="#">Eao</a>
+	
+		
+	</body>
+</html>
