@@ -1,0 +1,25 @@
+#start #start_banner{
+    background-image: url(../imag/banner.jpg);
+    height: 150px;
+}
+
+#start #start_link{
+    height:33px;
+
+}
+
+#start #start_link li{
+    float: left;
+    width: 78px;
+    background-image:url(../imag/button1.jpg);
+    text-align: center;
+    line-height: 33px;   
+}
+
+#start a{
+    text-decoration: underline;
+}
+#start a:hover{
+    background-image: url(../imag/button1_bg.jpg);
+    display: block;
+}

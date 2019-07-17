@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin:0;
+    font-size: 12px;
+}
+
+body{
+    background-color:rgb(38, 38, 141);
+}
+
+#main{
+    width: 780px;
+    height: 683px;
+    margin: 0 auto;
+}
+
+#start{
+    height: 183px;
+}
+
+#left{
+    width: 197px;
+    height: 500px;
+    background-color:white;
+    float: left;
+    margin: 3px 3px 3px 0px;
+}
+
+#middle{
+    width: 390px;
+    height: 500px;
+    background-color: blueviolet;
+    float: left;
+}
+
+#right{
+    width: 175px;
+    height: 500px;
+    background-color: hotpink;
+    float: right;
+}
+
+#bottom{
+    width: 780px;
+    height: 25px;
+    background-color: black;
+    clear: both;
+}
+
+ul{
+    list-style-type: none;
+}

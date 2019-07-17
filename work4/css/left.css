@@ -1,0 +1,40 @@
+#left #left_weather{
+    background-image: url(../imag/weather.jpg);
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 47px;
+    padding-top:49px; 
+}
+
+#left_weather ul{
+    margin-left: 5px;
+    background-color: aqua;
+    height: 90px;
+    padding-top: 7px;
+}
+
+#left_weather li{
+    background-image: url(../imag/icon1.gif);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 12px;
+}
+
+#left_recommend{
+    margin-left:5px; 
+    width: 180px;
+    margin-top: 50px;
+    padding-left: 5px;
+    background-color: aqua;
+}
+#left_recommend h3{
+    background-image: url(../imag/icon2.gif);
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    padding-left: 9px;
+    background-color: lightblue;
+}
+#left_recommend li{
+    margin-top: 7px;
+    text-align: center;
+}
