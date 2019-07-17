@@ -4,21 +4,22 @@
 	font-size: 12px;
 }
 
+body{
+	background-color: #ffd8d9;
+}
+
 #main {
-	background-color: azure;
 	height: 850px;
 	width: 700px;
 	margin: 0 auto;
 }
 
 #start {
-	background-color: bisque;
 	height: 153px;
 	width: 700px;
 }
 
 #left {
-	background-color:red ;
 	height: 695px;
 	width: 180px;
 	margin-top: 2px;
@@ -26,7 +27,6 @@
 }
 
 #right {
-	background-color: blue;
 	height: 695px;
 	width: 515px;
 	float: right;

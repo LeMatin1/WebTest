@@ -1,12 +1,36 @@
 #left #left_login {
-	
+	background-image: url(../img/login.jpg);
+	background-repeat: no-repeat;
+	padding-top:50px ;
+	padding-left: 25px;
+	background-color:white ;
 }
 
-#left #left_login #li #a{
+#left #left_login ul{
+	list-style-type: none;
+}
+
+#left #left_login input.txtStyle{
+	border: none;
+	border-bottom: solid 1px #000;
+	width: 80px;
+}
+
+#left #left_login input.btnStyle{
+	width: 35px;
+	border: solid 1px #000000;
+}
+
+#left #left_login form li a{
 	
 	text-decoration: none;
 	color: #664543;
 	
+}
+
+
+#left #left_login form li{
+	margin-top: 7px;
 }
 
 #left #left_category {
