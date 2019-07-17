@@ -19,6 +19,7 @@
 #left #left_login input.btnStyle{
 	width: 35px;
 	border: solid 1px #000000;
+	background-color: #FFD8D9;
 }
 
 #left #left_login form li a{
@@ -34,5 +35,31 @@
 }
 
 #left #left_category {
-	
+	background-image: url(../img/category.jpg);
+	background-repeat: no-repeat;
+	padding:50px 5px 3px 20px;
+	background-color: white;
+}
+
+#left #left_category h3{
+	background-color: #FFD8D9;
+	margin-top: 5px;
+}
+
+#left #left_category li{
+	background-image: url(../img/icon1.gif);
+	background-repeat: no-repeat;
+	background-position:0 6px ;
+	padding-left: 9px;
+	line-height: 24px;
+	border-bottom: dashed 1px #999;
+}
+#left #left_category li a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#left #left_category li a:hover{
+	text-decoration: underline;
+	color: hotpink;
 }

@@ -9,7 +9,7 @@ body{
 }
 
 #main {
-	height: 850px;
+
 	width: 700px;
 	margin: 0 auto;
 }
@@ -20,18 +20,19 @@ body{
 }
 
 #left {
-	height: 695px;
 	width: 180px;
 	margin-top: 2px;
 	float: left;
 }
 
 #right {
-	height: 695px;
 	width: 515px;
 	float: right;
 	margin-top: 2px;
 }
 
+ul{
+	list-style-type: none;
+}
 
 
