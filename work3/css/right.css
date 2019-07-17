@@ -15,7 +15,7 @@
 	background-image: url(../img/recommend.jpg);
 	background-color: #FFFFFF;
 	margin-top: 113px;
-	height: 320px;
+	height: 340px;
 	padding-top: 34px;
 }
 #right #right_recommand li{
@@ -55,7 +55,7 @@
 	background-repeat: no-repeat;
 	padding-top: 33px;
 	background-color: #FFFFFF;
-	height: 123px;
+	height: 130px;
 	
 }
 
@@ -65,8 +65,8 @@
 	background-position: 0 5px;
 	padding-left: 7px;
 	float: left;
-	width: 210px;
-	margin-left: 15px;
+	width: 180px;
+	margin-left:40px;
 	margin-top: 7px;
 }
 
@@ -77,5 +77,5 @@
 
 #right #right_tips li a:hover{
 	text-decoration: underline;
-	color: #FFD8D9;
+	color: hotpink;
 }
