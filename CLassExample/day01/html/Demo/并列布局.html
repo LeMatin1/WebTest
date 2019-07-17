@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>并列布局</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			#main{
+				background-color: aqua;
+				height: 680px;
+				width: 500px;
+				margin: 0 auto;
+			}
+			#top{
+				background-color:#00BFFF;
+				height: 180px;
+			}
+			
+			#left{
+				background-color:antiquewhite;
+				height: 400px;
+				width: 150px;
+				float: left;
+			}
+			
+			#right{
+				background-color:blueviolet;
+				height: 400px;
+				width: 340px;
+				float:right;
+			}
+			
+			#foot{
+				background-color:#FF0000;
+				height: 100px;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="top"></div>
+			<div id="left"></div>
+			<div id="right"></div>
+			<div id="foot"></div>
+		</div>
+	</body>
+</html>

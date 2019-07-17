@@ -1,0 +1,81 @@
+#right #right_latest{
+	background-image: url(../img/latest.jpg);
+	background-repeat: no-repeat;
+	padding-top: 33px;
+}
+
+#right #right_latest li{
+	float: left;
+}
+#right #right_latest li img{
+	margin-left: 2px;
+}
+
+#right #right_recommend{
+	background-image: url(../img/recommend.jpg);
+	background-repeat: no-repeat;
+	margin-top: 109px;
+	padding-top: 33px;
+	background-color: white;
+	height: 300px;
+}
+
+#right #right_recommend li{
+	float: left;
+	margin-left: 18.8px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#right #right_recommend li a{
+	text-decoration: none;
+	color: #999999;
+}
+
+
+
+#right #right_new{
+	background-image:url(../img/new.jpg);
+	background-repeat: no-repeat;
+	margin-top: 2px;
+	padding-top: 33px;
+	background-color: white;
+	height: 150px;
+}
+
+#right #right_new li{
+	float: left;
+	margin-left: 18.8px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#right #right_new li a{
+	text-decoration: none;
+	color: #999999;
+}
+
+#right #right_tips{
+	background-image: url(../img/tips.jpg);
+	background-repeat: no-repeat;
+	margin-top: 2px;
+	background-color: white;
+	height: 123px;
+	padding: 33px 0px 5px 35px;
+}
+
+#right #right_tips li{
+	float: left;
+	width: 200px;
+	margin-top: 8px;
+	background-image:url(../img/icon2.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 10px;
+}
+
+
+#right #right_tips li a{
+	text-decoration: none;
+	color: #000;
+}

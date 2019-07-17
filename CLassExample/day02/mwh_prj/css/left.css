@@ -1,0 +1,56 @@
+#left #left_login{
+	background-image: url(../img/login.jpg);
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	padding-left: 25px;
+}
+#left #left_login li{
+	margin-top: 5px;
+}
+#left #left_login input.txtStyle{
+	border: none;
+	border-bottom: solid 1px #000;
+	width: 90px;
+}
+
+#left #left_login input.btnStyle{
+	border: solid 1px #000000;
+	width: 35px;
+	background-color: #ffd8d9;
+}
+
+#left #left_login form a{
+	text-decoration: none;
+	color: #000000;
+}
+
+
+#left #left_category{
+	background-image: url(../img/category.jpg);
+	background-repeat: no-repeat;
+	padding: 50px 20px 5px 20px;
+}
+
+#left #left_category h3{
+	background-color: #ffd8d9;
+	margin-top: 10px;
+}
+
+#left #left_category li{
+	line-height: 24px;
+	border-bottom: dashed 1px #999;
+	background-image: url(../img/icon1.gif);
+	background-repeat: no-repeat;
+	background-position: 0 10px;
+	padding-left: 15px;
+}
+
+#left #left_category li a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#left #left_category li a:hover{
+	text-decoration: underline;
+	color: hotpink;
+}

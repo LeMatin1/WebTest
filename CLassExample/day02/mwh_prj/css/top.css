@@ -1,0 +1,22 @@
+#top #banner{
+	background-image: url(../img/banner.jpg);
+	height: 120px;
+}
+
+#top #links li{
+	float: left;
+	width: 100px;
+	text-align: center;
+	line-height: 33px;
+	background-image: url(../img/button1.jpg);
+}
+
+#top #links li a{
+	text-decoration:none;
+	color: #664543;
+}
+
+#top #links li a:hover{
+	background-image: url(../img/button1_bg.jpg);
+	display: block;
+}
