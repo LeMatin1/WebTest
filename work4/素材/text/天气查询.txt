@@ -1,0 +1,7 @@
+<ul>
+	<li>乌鲁木齐&nbsp;&nbsp;&nbsp;雷阵雨 20℃-31℃</li>
+	<li>吐鲁番&nbsp;&nbsp;&nbsp;多云转阴 20℃-28℃</li>
+	<li>喀什&nbsp;&nbsp;&nbsp;阵雨转多云 25℃-32℃</li>
+	<li>库尔勒&nbsp;&nbsp;&nbsp;阵雨转阴 21℃-28℃</li>
+	<li>克拉马依&nbsp;&nbsp;&nbsp;雷阵雨 26℃-30℃</li>
+</ul>

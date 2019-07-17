@@ -1,0 +1,8 @@
+<ul>
+	<li><a href="#"><img src="tuijian1.jpg"></a></li>
+	<li><a href="#">喀纳斯河</a></li>
+	<li><a href="#"><img src="tuijian2.jpg"></a></li>
+	<li><a href="#">布尔津</a></li>
+	<li><a href="#"><img src="tuijian3.jpg"></a></li>
+	<li><a href="#">天山之路</a></li>
+</ul>

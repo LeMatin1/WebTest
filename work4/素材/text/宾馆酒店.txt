@@ -1,0 +1,9 @@
+<ul>
+	<li><a href="#">美丽华大饭店</a></li>
+	<li><a href="#">海德大饭店</a></li>
+	<li><a href="#">银都大饭店</a></li>
+	<li><a href="#">鸿福大饭店</a></li>
+	<li><a href="#">友好大酒店</a></li>
+	<li><a href="#">棉麻宾馆</a></li>
+	<li><a href="#">电信宾馆</a></li>
+</ul>

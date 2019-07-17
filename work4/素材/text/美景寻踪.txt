@@ -1,0 +1,6 @@
+<ul>
+	<li><a href="#"><img src="beauty1.jpg"></a></li>
+	<li><a href="#"><img src="beauty2.jpg"></a></li>
+	<li><a href="#"><img src="beauty3.jpg"></a></li>
+	<li><a href="#"><img src="beauty4.jpg"></a></li>
+</ul>

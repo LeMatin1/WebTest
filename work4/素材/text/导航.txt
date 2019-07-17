@@ -1,0 +1,12 @@
+<ul>
+	<li><a href="#">首页</a></li>
+	<li><a href="#">新疆简介</a></li>
+	<li><a href="#">风土人情</a></li>
+	<li><a href="#">吃在新疆</a></li>
+	<li><a href="#">路线选择</a></li>
+	<li><a href="#">自助行</a></li>
+	<li><a href="#">摄影摄像</a></li>
+	<li><a href="#">游记精选</a></li>
+	<li><a href="#">资源下载</a></li>
+	<li><a href="#">雁过留声</a></li>
+</ul>
