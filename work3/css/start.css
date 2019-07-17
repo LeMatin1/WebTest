@@ -1,0 +1,31 @@
+#start #start_banner {
+	background: url(../img/banner.jpg) ;
+	width: 700px;
+	height: 120px;
+}
+
+#start #start_link {
+	width: 700px;
+	height: 33px;
+}
+#start #start_link ul{
+	list-style-type: none;
+}
+
+#start #start_link li{
+	float: left;
+	width: 100px;
+	text-align: center;
+	line-height: 33px;
+	background-image: url(../img/button1.jpg);
+}
+
+#start #start_link li a{
+	text-decoration: none;
+	color: #664543;
+}
+
+#start #start_link li a:hover{
+	background-image: url(../img/button1_bg.jpg);
+	display: block;
+}
