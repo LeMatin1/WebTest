@@ -1,0 +1,17 @@
+#bottom li{
+	text-align: center;
+	background-color: #5ea6eb;
+}
+
+#bottom a{
+	text-decoration: none;
+	background-color: #5ea6eb;
+}
+
+#bottom_copyright{
+	color: #000000;	
+}
+
+#bottom_email{
+	color: #ffffff;
+}

@@ -1,0 +1,43 @@
+#middle_ghost{
+	background-image: url(../imag/ghost.jpg);
+	width: 390px;
+	height: 260px;
+}
+
+#middle_picture{
+	margin-top: 30px;
+	background-image: url(../imag/picture_h1.gif);
+	background-repeat: no-repeat;
+	width: 390px;
+	height: 200px;
+}
+
+#middle_picture li{
+	margin:50px 0px 0px 10px;
+	float: left;;
+}
+
+#middle_picture li img{
+	border: solid 1px #4ab0ff;
+}
+
+#middle_route{
+	width: 390px;
+	background-image: url(../imag/route_h1.gif);
+	background-repeat: no-repeat;
+	padding-top: 50px;
+}
+
+#middle_route li{
+	background-image: url(../imag/icon1.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 10px;
+	margin-left: 15px;
+	margin-top: 3px;
+}
+
+#middle_route li a{
+	text-decoration: none;
+	color: #004e8a;
+}

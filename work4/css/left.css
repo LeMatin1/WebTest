@@ -1,40 +1,55 @@
 #left #left_weather{
-    background-image: url(../imag/weather.jpg);
+    background-image: url(../imag/lgcWeather.jpg);
     background-repeat: no-repeat;
-    width: 190px;
-    height: 47px;
-    padding-top:49px; 
+    padding-top:15px;
+}
+
+#left_weather h3{
+	margin-left: 75px;
+	color: white;
 }
 
 #left_weather ul{
-    margin-left: 5px;
-    background-color: aqua;
-    height: 90px;
+	margin-top: 11px;
+    background-color: #5ea6eb;
+    height: 100px;
     padding-top: 7px;
+    width: 190px;
 }
+
+
 
 #left_weather li{
     background-image: url(../imag/icon1.gif);
     background-repeat: no-repeat;
     background-position: 5px 5px;
     padding-left: 12px;
+    color: #d8ecff;
 }
 
-#left_recommend{
-    margin-left:5px; 
-    width: 180px;
-    margin-top: 50px;
-    padding-left: 5px;
-    background-color: aqua;
+#left_recommend{ 
+    width: 190px;
+    height: 480px;
+    background-color: #5ea6eb;
 }
 #left_recommend h3{
     background-image: url(../imag/icon2.gif);
     background-repeat: no-repeat;
-    background-position: 0 5px;
-    padding-left: 9px;
-    background-color: lightblue;
+    background-position: 3px 8px;
+    background-color: #bbddff;
+    color: #003973;
+    padding: 3px 0px 3px 14px;
 }
 #left_recommend li{
     margin-top: 7px;
     text-align: center;
+}
+
+#left_recommend img{
+	border: solid 1px #FFFFFF;
+}
+
+#left_recommend a{
+	text-decoration: none;
+	color: #d8ecff;
 }

@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <head>
     <title>新疆行知书</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/start.css">
     <link rel="stylesheet" type="text/css" href="css/left.css">
+    <link rel="stylesheet" type="text/css" href="css/middle.css" />
+    <link rel="stylesheet" type="text/css" href="css/right.css" />
+    <link rel="stylesheet" type="text/css" href="css/bottom.css" />
 </head>
 <body>
     <div id="main">
+    	<!--
+        	作者：offline
+        	时间：2019-07-18
+        	描述：最上方的部分
+        -->
         <div id="start">
             <div id="start_banner"></div>
             <div id="start_link">
                 <ul>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">新疆简介</a></li>
-                    <li><a href="#">风土人情</a></li>
-                    <li><a href="#">吃在新疆</a></li>
-                    <li><a href="#">路线选择</a></li>
-                    <li><a href="#">自助行</a></li>
-                    <li><a href="#">摄影摄像</a></li>
-                    <li><a href="#">游记精选</a></li>
-                    <li><a href="#">资源下载</a></li>
-                    <li><a href="#">雁过留声</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">新疆简介</a></li>
+					<li><a href="#">风土人情</a></li>
+					<li><a href="#">吃在新疆</a></li>
+					<li><a href="#">路线选择</a></li>
+					<li><a href="#">自助行</a></li>
+					<li><a href="#">摄影摄像</a></li>
+					<li><a href="#">游记精选</a></li>
+					<li><a href="#">资源下载</a></li>
+					<li><a href="#">雁过留声</a></li>
                 </ul>
             </div>
         </div>
-        <div id="left">
+
+		<!--
+			作者：offline
+			时间：2019-07-18
+			描述：左边部分
+		-->
+		<div id="left">
             <div id="left_weather">
+            	<h3>天气查询</h3>
                 <ul>
-                    <li>乌鲁木齐&nbsp;&nbsp;&nbsp;雷阵雨 20℃-31℃</li>
-                    <li>吐鲁番&nbsp;&nbsp;&nbsp;多云转阴 20℃-28℃</li>
-                    <li>喀什&nbsp;&nbsp;&nbsp;阵雨转多云 25℃-32℃</li>
-                    <li>库尔勒&nbsp;&nbsp;&nbsp;阵雨转阴 21℃-28℃</li>
-                    <li>克拉马依&nbsp;&nbsp;&nbsp;雷阵雨 26℃-30℃</li>
+					<li>乌鲁木齐&nbsp;&nbsp;&nbsp;雷阵雨 20℃-31℃</li>
+					<li>吐鲁番&nbsp;&nbsp;&nbsp;多云转阴 20℃-28℃</li>
+					<li>喀什&nbsp;&nbsp;&nbsp;阵雨转多云 25℃-32℃</li>
+					<li>库尔勒&nbsp;&nbsp;&nbsp;阵雨转阴 21℃-28℃</li>
+					<li>克拉马依&nbsp;&nbsp;&nbsp;雷阵雨 26℃-30℃</li>
                 </ul>
             </div>
             <div id="left_recommend">
@@ -46,9 +62,81 @@
                 </ul>
             </div>
         </div>
-        <div id="middle"></div>
-        <div id="right"></div>
-        <div id="bottom"></div>
+  
+		 <!--
+		 	作者：offline
+		 	时间：2019-07-18
+		 	描述：中间部分
+		 --> 
+ 		 <div id="middle">
+        	<div id="middle_ghost"></div>
+        	<div id="middle_picture">
+				<ul>
+					<li><a href="#"><img src="imag/beauty1.jpg"></a></li>
+					<li><a href="#"><img src="imag/beauty2.jpg"></a></li>
+					<li><a href="#"><img src="imag/beauty3.jpg"></a></li>
+					<li><a href="#"><img src="imag/beauty4.jpg"></a></li>
+				</ul>
+        	</div>
+        	<div id="middle_route">
+        		<ul>
+				  <li><a href="#">吐鲁番——库尔勒——库车——塔中——和田——喀什</a></li>
+				  <li><a href="#">乌鲁木齐——天池——克拉马依——乌伦古湖——喀纳斯</a></li>
+				  <li><a href="#">乌鲁木齐——奎屯——乔尔玛——那拉提——巴音布鲁克</a></li>
+				  <li><a href="#">乌鲁木齐——五彩城——将军隔壁——吉木萨尔</a></li>
+				</ul>
+        	</div>
+        </div>
+        
+        
+        <!--
+        	作者：offline
+        	时间：2019-07-18
+        	描述：右边部分
+        -->
+        <div id="right">
+        	<div id="right_scenery">   	
+        		<h3>新疆风光</h3>
+        		<ul>
+					<li><a href="#"><img src="imag/map1.jpg"></a></li>
+					<li><a href="#"><img src="imag/map2.jpg"></a></li>
+				</ul>
+        	</div>
+        	<div id="right_food">
+        		<h3>小吃推荐</h3>
+        		<ul>
+					<li><a href="#">17号抓饭</a></li>
+					<li><a href="#">大盘鸡</a></li>
+					<li><a href="#">五一夜市</a></li>
+					<li><a href="#">水果</a></li>
+				</ul>	
+        	</div>
+        	<div id="right_hotel">
+        		<h3>宾馆推荐</h3>
+        		<ul>
+					<li><a href="#">美丽华大饭店</a></li>
+					<li><a href="#">海德大饭店</a></li>
+					<li><a href="#">银都大饭店</a></li>
+					<li><a href="#">鸿福大饭店</a></li>
+					<li><a href="#">友好大酒店</a></li>
+					<li><a href="#">棉麻宾馆</a></li>
+					<li><a href="#">电信宾馆</a></li>
+				</ul>
+        	</div>
+        </div>
+        
+        <!--
+        	作者：offline
+        	时间：2019-07-18
+        	描述：底部版权部分
+        -->
+        <div id="bottom">
+        	<ul>
+        		<li><a href="#" id="bottom_copyright">艾萨克 ©版权所有</a> 
+        			<a href="#" id="bottom_email"> demo@demo.com</a>
+        		</li>
+        	</ul>
+        </div>
     </div>
 
 </body>

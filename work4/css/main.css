@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:rgb(38, 38, 141);
+    background-color:#2286c6;
 }
 
 #main{
@@ -19,32 +19,37 @@ body{
 }
 
 #left{
-    width: 197px;
-    height: 500px;
+    width: 190px;
     background-color:white;
     float: left;
-    margin: 3px 3px 3px 0px;
+    margin: 1px 2px 3px 0px;
+    padding: 5px 5px 5px 5px;
 }
 
 #middle{
     width: 390px;
-    height: 500px;
-    background-color: blueviolet;
+    height: 620px;
+    background-color: white;
     float: left;
+    margin: 1px 1px 3px 0px;
+    padding: 5px 5px 5px 5px;
 }
 
 #right{
-    width: 175px;
-    height: 500px;
-    background-color: hotpink;
+    width: 165px;
+    height: 620px;
+    background-color: white;
     float: right;
+    margin: 1px 0px 3px 0px;
+    padding: 5px 5px 5px 5px;
 }
 
 #bottom{
+	margin-top: 5px;
     width: 780px;
-    height: 25px;
-    background-color: black;
+    background-color: white;
     clear: both;
+    padding: 5px 5px 5px 5px;
 }
 
 ul{
