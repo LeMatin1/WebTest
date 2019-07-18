@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#ball{
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/ball.png" id="ball" />
+		<script>
+			
+			var ball = document.getElementById("ball");
+			var y = document.documentElement.clientHeight-120;
+			var x = document.documentElement.clientWidth-120;
+			
+			
+			
+			console.log(ball.height);
+			console.log(ball.width);
+			console.log(y+":"+x);
+			
+			//setInterval(move,30);
+			
+			var yv = 30;xv = 30;
+			var ys = 0, xs = 0;
+			
+			function move(){
+				ys+=yv;
+				xs+=xv;
+				
+				if(ys >= y){
+					ys = y;
+//					yv *= -1;
+					yv = (Math.random()*50)+20*-1;
+				}
+				if(ys <= 0){
+					ys = 0;
+					yv = (Math.random()*50)+20;
+				}
+				if(xs >= x){
+					xs = x;
+//					xv *= -1;
+					xv=(Math.random()*50)+20*-1;		
+				}
+				if(xs <= 0){
+					xs = 0;
+//					xv *= -1;
+					xv=(Math.random()*50)+20;
+				}
+				ball.style.top = ys+"px";
+				ball.style.left = xs+"px";
+				
+//				document.writeln("y:"+ys+"-x:"+xs)
+				console.log(("y:"+ys+"-x:"+xs));
+			}
+			
+		</script>
+	</body>
+</html>

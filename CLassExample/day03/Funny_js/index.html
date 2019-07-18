@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ball</title>
+		<style type="text/css">
+			#ball{
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/ball.png" id="ball" width="120" height="120"  />
+		<script>
+			//获取文档图片对象
+			var ball = document.getElementById("ball");
+			//获取最大边界
+			//可见区域高度-图片高度
+			var y = document.documentElement.clientHeight - ball.offsetHeight;
+			
+			var x = document.documentElement.clientWidth - ball.offsetWidth;
+			//设置定时器：按照指定的周期（以毫秒计算）来调用函数或计算表达式
+			setInterval(move,200);
+			//定义水平和垂直方向的速度
+			var yv = 20,xv = 10;
+			//移动的位移
+			var ys =0,xs=0;
+			
+			//移动方法
+			function move(){
+				//垂直方向的位移
+				ys = ys + yv;
+				//向下移动到最底边的时候、
+				if(ys >= y){
+					ys = y;
+					yv = -yv;
+				}
+				//向上移动到最顶边的时候
+				if(ys <= 0){
+					ys = 0;
+					yv = -yv;
+				}
+				ball.style.top = ys+"px";
+				//ball.style.height =  ys+"px";
+				xs = xs + xv;
+				
+				if(xs >= x){
+					xs = x;
+					xv = -xv;
+				}
+				
+				if(xs <= 0 ){
+					xs = 0;
+					xv = -xv;
+				}
+				ball.style.left = xs+"px";
+				//ball.style.width =  xs+"px";
+			}
+			
+		</script>
+	</body>
+</html>

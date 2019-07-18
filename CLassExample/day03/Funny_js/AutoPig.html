@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			#main{
+				width: 450px;
+				height: 270px;
+				border:solid 1px #f00;
+				overflow: hidden;
+				position: relative;
+			}
+			#pic{
+				/*
+				 * 1.希望width根据浏览器窗口大小进行调整，就用百分比
+				 * 2.盒子套盒子（div）里面的DIV的width直接用百分比
+				 * 如果外面的width变动，也不用修改里面div的width大小
+				 */
+				width: 700%;
+				height: 270px;
+			}
+			#pic li{
+				float: left;
+			}
+			#btn{
+				width: 200px;
+				height: 20px;
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+			}
+			#btn li{
+				width: 20px;
+				height: 20px;
+				background-color: #fff;
+				border-radius: 3px;
+				float: left;
+				margin-left: 8px;
+				text-align: center;
+				line-height: 20px;
+				cursor: pointer;
+				/*
+				 * border-radius：添加圆角边框
+				 * cursor: pointer 光标呈现为一只手
+				 */
+			}
+
+			.arrow{
+				display: none;
+			}
+			#btn .on{
+				background-color: orangered;
+				color: #fff;
+			}
+			
+			#prev,#next{
+				
+				position: absolute;
+				top: 50%;
+				font-size: 24px;
+				color: #fff;
+				display: block;
+				background-color: rgba(0,0,0,.3);
+				/*
+				 * rgba(0,0,0,.3) 设置透明度：前三个属性值为颜色，混合色
+				 */
+				width: 30px;
+				height: 60px;
+				text-align: center;
+				line-height: 60px;
+				margin-top: -20px;
+				cursor: pointer;
+			}
+			#prev{
+				left: 0;
+			}
+			
+			#next{
+				right:0;
+			}
+			#prev:hover,#next:hover{
+				background-color: rgba(0,0,0,.6);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<!--
+        	作者：offline
+        	时间：2019-07-18
+        	描述：轮播图片
+	        -->
+	        <ul id="pic">
+	        	<li><img src="img/01.jpg" alt=""></li>
+	        	<li><img src="img/02.jpg" alt=""></li>
+	        	<li><img src="img/03.jpg" alt=""></li>
+	        	<li><img src="img/04.jpg" alt=""></li>
+	        	<li><img src="img/05.jpg" alt=""></li>
+	        	<li><img src="img/06.jpg" alt=""></li>
+	        	<li><img src="img/07.jpg" alt=""></li>
+	        </ul>
+	        <!--
+	        	作者：offline
+	        	时间：2019-07-18
+	        	描述：轮播按钮
+	        -->
+	        <ul id="btn">
+	        	<li class="on">1</li>
+	        	<li>2</li>
+	        	<li>3</li>
+	        	<li>4</li>
+	        	<li>5</li>
+	        	<li>6</li>
+	        	<li>7</li>
+	        </ul>
+	        
+	        <!--
+            	作者：offline
+            	时间：2019-07-18
+            	描述：左右箭头
+            -->
+            <div class="arrow">
+            	<span id="prev">&lt;</span>
+            	<span id="next">&gt;</span>
+            </div>
+		</div>
+		
+		<script>
+			/*
+			 * 1.图片自动切换（定时器）
+			 * 2.鼠标悬停在图片上不切换（清除定时器）
+			 * 3.鼠标悬停在按钮上时显示对应的图片（鼠标的悬停事件）
+			 * 4.当鼠标悬停在图片上时显示左右箭头
+			 * 5.点击左右箭头，考虑第一张和最后一张的处理
+			 */
+			
+			var main = document.getElementById("main");
+			var pic = document.getElementById("pic");
+			
+			var btnList = document.getElementById("btn").getElementsByTagName("li");
+			var prev = document.getElementById("prev");
+			var next = document.getElementById("next");
+			
+			var arrow = document.querySelector(".arrow");
+			
+			//定义一个变量，来保存当前图片切换的索引值
+			var index = 0;
+			//定义定时器对象
+			var timer = setInterval(autoPlay,3000);
+			
+			//自动切换到下一张图片
+			function autoPlay(){
+				index++;
+				if(index >= btnList.length){
+					index = 0;
+				}
+				//图片切换
+				changeImg(index);
+			}
+			
+			function changeImg(currentIndex){
+				//向左位移图片宽度的倍数
+				pic.style.marginLeft = -450 * currentIndex +"px";
+				//将所有按钮的样式设置为默认
+				for(var i =0;i<btnList.length;i++){
+					btnList[i].className = "";
+				}
+				btnList[currentIndex].className="on";
+			}
+			
+			//鼠标悬停在图片上不切换（清除定时器）
+			main.onmouseover = function(){
+				//清除定时器
+				clearInterval(timer);
+				//显示箭头
+				arrow.style.display = "block";
+			}
+			//移出鼠标图片开启定时器
+			main.onmouseout = function(){
+				timer = setInterval(autoPlay,3000);
+				
+				arrow.style.display = "none";
+			}
+			//给按钮循环添加悬停事件
+			for(let i = 0;i<btnList.length;i++){
+				btnList[i].onmouseover=function(){
+					clearInterval(timer);
+					//切换图片
+					changeImg(i);
+					index = i;
+				}
+			}
+			//手动点击右键播放
+			next.onclick = function(){
+				autoPlay();
+			}
+			//点击左键
+			prev.onclick = function(){
+				index--;
+				if(index < 0){
+					index = btnList.length - 1;
+				}
+				changeImg(index);
+			}
+		</script>
+	</body>
+</html>
