@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Game2048</title>
+		<link rel="stylesheet" href="css/index.css" />
+		
+	</head>
+	<body>
+		<h1>2048</h1>
+		<a href="#" class="start">New Game</a>
+		<p class="score01">SCORE:<span id="score01">0</span></p>
+		
+		<div class="gridpanel">
+			<!--第一行-->
+			<div class="cell" id="cell00"></div>
+			<div class="cell" id="cell01"></div>
+			<div class="cell" id="cell02"></div>
+			<div class="cell" id="cell03"></div>
+			<!--第二行-->
+			<div class="cell" id="cell10"></div>
+			<div class="cell" id="cell11"></div>
+			<div class="cell" id="cell12"></div>
+			<div class="cell" id="cell13"></div>
+			<!--第三行-->
+			<div class="cell" id="cell20"></div>
+			<div class="cell" id="cell21"></div>
+			<div class="cell" id="cell22"></div>
+			<div class="cell" id="cell23"></div>
+			<!--第四行-->
+			<div class="cell" id="cell30"></div>
+			<div class="cell" id="cell31"></div>
+			<div class="cell" id="cell32"></div>
+			<div class="cell" id="cell33"></div>
+		</div>
+	
+		<!--游戏结束-->
+		<div id="gameover">
+			<p>
+				GAME OVER!<br />
+				SCORE:<span id="score02">0</span><br />
+				<a href="javascript:game.start()" class="start">New Game</a>
+			</p>
+		</div>
+		<script type="text/javascript" src="js/game.js" ></script>
+	</body>
+</html>
